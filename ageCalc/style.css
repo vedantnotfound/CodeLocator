@@ -1,0 +1,276 @@
+/* ? Font Importing */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* ? CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins', sans-serif;;
+}
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+.container{
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 50px 30px;
+}
+.container *{
+    font-family: "Poppins",sans-serif;
+    border: none;
+    outline: none;
+}
+.inputs-wrapper{
+    background-color: #f5f5f5;
+    padding: 30px 25px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    /* box-shadow: 0 15px 20px rgba(0,0,0,0.1); */
+    margin-bottom: 50px;
+}
+input,
+button{
+    height: 50px;
+    background-color: #ffffff;
+    
+    color: #080808;
+    font-weight: 500;
+    border-radius: 5px;
+}
+input{
+    width: 60%;
+    padding: 0 20px;
+    font-size: 14px;
+    border: 1px solid #585858;
+}
+button{
+    width: 35%;
+    float: right;
+    margin-left: 10px;
+    border: 1px solid #585858;
+}
+#date-input{
+    border: 1px solid #ccc;
+}
+.inputs-wrapper button{
+    border: 1px solid #ccc;
+}
+.outputs-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.outputs-wrapper div{
+    height: 100px;
+    width: 100px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    color: #181818;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    /* box-shadow: 0 15px 20px rgba(0,0,0,0.3); */
+}
+.container span{
+    font-size: 30px;
+    font-weight: 500;
+}
+p{
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+}
+
+/** My Code */
+
+/* ? Navbar */
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background: #f5f5f5;
+    width: 100%;
+    position: fixed;
+    z-index: 1000000;
+}
+#navbar #logo a{
+    text-decoration: none;
+}
+#navbar #logo a h1{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 500;
+}
+#navbar #logo a h1 span{
+    background: -webkit-linear-gradient(top left, #00eaff,#005354);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+/* ? Settings */
+
+#navbar #settings{
+    display: flex;
+    align-items: center;
+}
+#navbar #settings .settingBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background:#d4d4d4;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+#navbar #settings .settingBtn i{
+    font-size: 22px;
+    color: var(--textColor);
+}
+/** SideBar */
+#sideBar{
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: flex-start;
+    flex-direction: column;
+    width: 280px;
+    background: #f5f5f5;
+    height:100%;
+    z-index: 1000000;
+    padding: 20px;
+    /* margin: 10px; */
+    transition: 0.5s;
+    transform: translateX(400px);
+}
+#sideBar #close{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    color: #181818;
+    border-radius: 3px;
+    cursor: pointer;
+    /* transition: 0.5s; */
+
+}
+#sideBar a{
+    display: flex;
+    position: relative;
+    top: 50px;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    /* display: inline; */
+    width: 85%;
+    margin: 6px 0px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #181818;
+    text-underline-offset: 3px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#sideBar #terms {
+    position: absolute;
+    bottom: 70px;
+    width: 86%;
+   
+}
+#sideBar a:hover {
+    text-decoration: underline;
+    color: #008386; 
+}
+#sideBar #terms a{
+    width: 86%;
+    text-decoration: underline;
+    color: #008386;
+}
+
+#heading{
+    position: relative;
+    top: 130px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
+#heading span{
+    background: -webkit-linear-gradient(top left, #00eaff,#005354);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+@media (max-width:440px) and (min-width:370px) {
+    .container{
+        width: 40%;
+        min-width: 400px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        padding: 50px 30px;
+    }
+}
+@media (max-width:370px) and (min-width:350px) {
+    #heading{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 40%;
+        min-width: 380px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 60%;
+        padding: 50px 30px;
+    }
+}
+@media (max-width:350px) and (min-width:300px) {
+    .container{
+        width: 40%;
+        min-width: 300px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 60%;
+        padding: 0px 0px;
+    }
+    .inputs-wrapper{
+        padding: 20px;
+    }
+    .outputs-wrapper div{
+        padding: 5px;
+        margin: 5px;
+    }
+    
+}

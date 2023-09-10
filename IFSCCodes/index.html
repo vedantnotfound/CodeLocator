@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLocator - IFSC Codes</title>
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/IFSCCodes/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    <div id="loader">
+        <h1 id="loderLogo">
+            Code<span>Locator</span>
+        </h1>
+        <p>Getting Ready...</p>
+    </div>
+    <section id="navbar">
+        <div id="logo">
+            <a href="/index.html">
+                <h1 class="text">
+                    Code<span>Locator</span>
+                </h1>
+            </a>
+
+        </div>
+        <div id="settings">
+            <div id="modes" class="settingBtn">
+                <i class="text uil uil-moon" id="modesIcon"></i>
+            </div>
+            <div id="menu" class="settingBtn">
+                <i class="text uil uil-bars"></i>
+            </div>
+        </div>
+    </section>
+    <section id="sideBar">
+        <div id="close">
+            &times;
+        </div>
+        <a href="/index.html" class="anchor text">
+            Home
+        </a>
+        <a href="/Pin-Codes/index.html" class="anchor text">
+            Pin-Codes Check 
+        </a>
+        <a href="/IFSCCodes/index.html" class="anchor text">
+            IFSC-Codes Check
+        </a>
+        <a href="/PasswordGen/index.html" class="anchor text">
+            Password Generator
+        </a>
+        <a href="/ageCalc/index.html" class="anchor text">
+            Age Calculator
+        </a>
+        <!-- <a href="">
+            Comming Soon
+        </a> -->
+        <div id="terms">
+            <a href="/terms.html" class="anchor">
+                Terms
+            </a>
+            <a href="/privacypolicy.html" class="anchor">
+                Privacy Policy
+            </a>
+        </div>
+    </section>
+    <div id="alert">
+        <p id="alertMsg"></p>
+        <div id="alertClose">
+            &times;
+        </div>
+    </div>
+    <section id="home">
+        <h1 class="text">
+            <span>IFSC-Codes</span> Searcher
+        </h1>
+        <div id="search">
+            <p class="text">Check IFSC Codes Using Searcher : </p>
+            <div id="searchBox">
+                <input class="text" type="text" id="searchInp" spellcheck="false" style='text-transform:uppercase' autocomplete="off" placeholder="Eg - SBIN0012306" maxlength="11">
+                <button type="submit" id="checkBtn"><i class="uil uil-search" id="searchIcon"></i>Check</button>
+            </div>
+        </div>
+        <section id="result">
+            <p id="resultMsg" class="text">Result : </p>
+            <div id="resultBox">
+                <!-- <div class="resultItem">
+                    <div id="bankLink">
+                        <a id="bankName" href="" class="item">Bank - State Bank of India
+                        </a>
+                        <div id="upArrow">
+                            <i class="uil-angle-down" id="arrow"></i>
+                        </div>
+                    </div>
+                    
+                    <p id="branch" class="item">Branch - Pipeline road, Ahemdnagar
+                    </p>
+                    <p id="ifsc" class="item">IFSC - SBIN0012306</p>
+                    <p id="address" class="item">Address - 720, NEAR GHANTAGHAR, SUBZI MANDI, DELHI - 110007</p>
+                    <div id="bankInfo">
+                        <p id="bankcode" class="item">Bank Code - DENS</p>
+                        <p id="UPI" class="item">UPI - True</p>
+                    </div>
+                    <p id="center" class="item">Center - Delhi</p>
+                    <p id="district" class="item">District - Delhi</p>
+                    <p id="state" class="item">State - Maharastra</p>
+                </div> -->
+            </div>
+        </section>
+    </section>
+    <script src="/IFSCCodes/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLocator - PinCode</title>
+    <link rel="shortcut icon" href="/Pin-Codes/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    
+    <div id="loader">
+        <h1 id="loderLogo">
+            Code<span>Locator</span>
+        </h1>
+        <p>Getting Ready...</p>
+    </div>
+    <section id="navbar">
+        <a href="/index.html" id="logo">
+            <h1 class="text">
+                Code<span>Locator</span>
+            </h1>
+        </a>
+        <div id="settings">
+            <div id="modes">
+                <i class="uil uil-moon" id="modesIcon"></i>
+            </div>
+            <div id="menu">
+                <i class="uil uil-bars" id="menuIcon"></i>
+            </div>
+        </div>
+    </section>
+    <div id="alert">
+        <p id="alertMsg"></p>
+        <div id="alertClose">
+            &times;
+        </div>
+    </div>
+    <section id="sideBar">
+        <div id="close">
+            &times;
+        </div>
+        <a href="/index.html" class="anchor text">
+            Home
+        </a>
+        <a href="/Pin-Codes/index.html" class="anchor text">
+            Pin-Codes Check 
+        </a>
+        <a href="/IFSCCodes/index.html" class="anchor text">
+            IFSC-Codes Check
+        </a>
+        <a href="/PasswordGen/index.html" class="anchor text">
+            Password Generator
+        </a>
+        <a href="/ageCalc/index.html" class="anchor text">
+            Age Calculator
+        </a>
+        <!-- <a href="">
+            Comming Soon
+        </a> -->
+        <div id="terms">
+            <a href="/terms.html" class="anchor">
+                Terms
+            </a>
+            <a href="/privacypolicy.html" class="anchor">
+                Privacy Policy
+            </a>
+        </div>
+        
+    </section>
+    <section id="home">
+        <h1 class="text"><span>PinCodes</span> Searcher</h1>
+
+        <div id="searcherBox">
+            <p class="text">Search Using Pin Codes :</p>
+            <div id="search" onsubmit="checkInp()">
+                <input type="text" type="submit" id="searchInp" autocomplete="off"
+                    placeholder="Eg : 414001 or New Delhi" class="text">
+                <button id="searchBtn" type="submit"><i class="uil uil-search" id="searchIcon"></i> Search</button>
+            </div>
+        </div>
+        <section id="results">
+            <p class="text" style="display: inline-block;">Results : </p>
+            <p id="msg" class="text"></p>
+
+            <div id="resultBox">
+                <!-- <div class="resultItem text">
+                    <span>Ac.Depot -</span> Ahmed Nagar - Maharastra <span>-414001</span>
+                </div>
+                <div class="resultItem text">
+                    <span>Ac.Depot -</span> Ahmed Nagar - Maharastra <span>-414001</span>
+                </div> -->
+            </div>
+        </section>
+        <!-- <footer id="footer">
+            <div class="text" id=" "> Copyrights &copy;2023 Code<span id="footerLogo">Locator</span> | Made By Anoncodes
+            </div>
+        </footer> -->
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/Pin-Codes/index.js"></script>
+</body>
+
+</html>

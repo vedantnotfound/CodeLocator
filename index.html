@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLocator - Home</title>
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    <div id="loader">
+        <h1 id="loderLogo">
+            Code<span>Locator</span>
+        </h1>
+        <p>Getting Ready...</p>
+    </div>
+    <section id="navbar">
+        <div id="logo">
+            <a href="/index.html">
+                <h1 class="text">
+                    Code<span>Locator</span>
+                </h1>
+            </a>
+
+        </div>
+        <div id="settings">
+            <!-- <div id="modes">
+                <i class="uil uil-sun" id="modesIcon"></i>
+            </div> -->
+            <div id="menu">
+                <i class="uil uil-bars"></i>
+            </div>
+        </div>
+    </section>
+    <section id="sideBar">
+        <div id="close">
+            &times;
+        </div>
+        <a href="/index.html">
+            Home
+        </a>
+        <a href="/Pin-Codes/index.html">
+            Pin-Codes Check
+        </a>
+        <a href="/IFSCCodes/index.html">
+            IFSC-Codes Check
+        </a>
+        <a href="/PasswordGen/index.html">
+            Password Generator
+        </a>
+        <a href="/ageCalc/index.html">
+            Age Calculator
+        </a>
+        <!-- <a href="">
+            Comming Soon
+        </a> -->
+        <div id="terms">
+            <a href="/terms.html">
+                Terms
+            </a>
+            <a href="/privacypolicy.html">
+                Privacy Policy
+            </a>
+        </div>
+    </section>
+    <section id="home">
+        <h1 class="text"><span>Tools</span></h1>
+        <section id="tools">
+            <a class="toolBox" id="toolBox1" href="/Pin-Codes/index.html">
+                <div id="iconBox">
+                    <img src="/assets/Address.gif" alt="">
+                </div>
+                <div id="pageup">
+                    <p>PinCodes Check</p>
+                    <i class="uil uil-external-link-alt"></i>
+                </div>
+            </a>
+            
+            <a class="toolBox" id="toolBox2" href="/IFSCCodes/index.html">
+                <div id="iconBox">
+                    <img src="/assets/Search.gif" alt="">
+                </div>
+                <div id="pageup">
+                    <p>IFSC-Codes Check</p>
+                    <i class="uil uil-external-link-alt"></i>
+                </div>
+            </a>
+
+            <a class="toolBox" id="toolBox3" href="/PasswordGen/index.html">
+                <div id="iconBox">
+                   <img src="/assets/Forgotpassword.gif" alt="">
+                </div>
+                <div id="pageup">
+                    <p>Password Generator</p>
+                    <i class="uil uil-external-link-alt"></i>
+                </div>
+            </a>
+            <a class="toolBox" id="toolBox3" href="/ageCalc/index.html">
+                <div id="iconBox">
+                   <img src="/assets/Calculator.gif" alt="">
+                </div>
+                <div id="pageup">
+                    <p>Age Calculator</p>
+                    <i class="uil uil-external-link-alt"></i>
+                </div>
+            </a>
+        </section>
+    </section>
+
+    <footer>
+        <div> Copyrights &copy; 2023 Code<span>Locator</span> 2023</div>
+        <a href="/privacypolicy.html">Privacy Policy</a>
+    </footer>
+    <script>
+        // Loader
+        let loader = document.getElementById("loader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+
+        // Menu
+        let menu = document.getElementById("menu");
+        menu.addEventListener("click", function () {
+            let sideBar = document.getElementById("sideBar");
+            sideBar.style.transform = "translateX(0px)";
+        })
+        let close = document.getElementById("close");
+        close.addEventListener("click", function () {
+            let sideBar = document.getElementById("sideBar");
+            sideBar.style.transform = "translateX(400px)";
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</body>
+
+</html>

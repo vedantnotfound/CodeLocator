@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CodeLocator - Age Calculator</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="/ageCalc/style.css">
+</head>
+<body>
+    <div id="loader">
+        <h1 id="loderLogo">
+            Code<span>Locator</span>
+        </h1>
+        <p>Getting Ready...</p>
+    </div>
+    <section id="navbar">
+        <div id="logo">
+            <a href="/index.html">
+                <h1 class="text">
+                    Code<span>Locator</span>
+                </h1>
+            </a>
+
+        </div>
+        <div id="settings">
+            <div id="menu" class="settingBtn">
+                <i class="text uil uil-bars"></i>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sideBar">
+        <div id="close">
+            &times;
+        </div>
+        <a href="/index.html" class="anchor text">
+            Home
+        </a>
+        <a href="/Pin-Codes/index.html" class="anchor text">
+            Pin-Codes Check 
+        </a>
+        <a href="/IFSCCodes/index.html" class="anchor text">
+            IFSC-Codes Check
+        </a>
+        <a href="/PasswordGen/index.html" class="anchor text">
+            Password Generator
+        </a>
+        <a href="/ageCalc/index.html" class="anchor text">
+            Age Calculator
+        </a>
+        <!-- <a href="">
+            Comming Soon
+        </a> -->
+        <div id="terms">
+            <a href="/terms.html" class="anchor">
+                Terms
+            </a>
+            <a href="/privacypolicy.html" class="anchor">
+                Privacy Policy
+            </a>
+        </div>
+    </section>
+    <h1 id="heading"><span>Age </span> Calculator</h1>
+    <div class="container">
+        <div class="inputs-wrapper">
+            <input type="date" id="date-input">
+            <button onclick="ageCalculate()">Calculate</button>
+        </div>
+        <div class="outputs-wrapper">
+            <div>
+                <span id="years">
+                    -
+                </span>
+                <p>
+                    Years
+                </p>
+            </div>
+            <div>
+                <span id="months">
+                    -
+                </span>
+                <p>
+                   Months
+                </p>
+            </div>
+            <div>
+                <span id="days">
+                    -
+                </span>
+                <p>
+                    Days
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="/ageCalc/index.js"></script>
+</body>
+</html>
